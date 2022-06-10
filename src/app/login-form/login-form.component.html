@@ -1,0 +1,19 @@
+<!-- <form [formGroup]="loginForm" (ngSubmit)="loginSubmit()"> -->
+<div class="form" *ngIf="getback; else noForm">
+    
+    <input type="login" placeholder="Login">
+
+    <div class="password">
+    <input type="password" placeholder="password">
+    <!-- <input type="checkbox"> -->
+    </div>  
+
+    <input type="email" placeholder="email@blabla">
+    <button>Submit</button>
+    <button (click)="goBack()">Cancel</button>
+</div>
+<!-- </form> -->
+
+<ng-template #noForm>
+<app-root></app-root>
+</ng-template>

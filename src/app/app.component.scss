@@ -1,0 +1,23 @@
+div{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    flex-direction: column;
+    align-items: center;
+}
+
+button{
+    font-size: 24px;
+    width: 15%;
+    border-radius:10px;
+    border: none;
+    background-color:  purple;
+    color: aquamarine;
+}
+
+button:active {
+    background-color:  rgb(88, 0, 88);
+    color: rgb(103, 224, 184);
+}
+
+

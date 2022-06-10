@@ -1,0 +1,11 @@
+
+<div *ngIf="callForm; else loginForm">
+  <h1>Random site with validation</h1>
+  <button (click)="showForm()" [(ngModel)]="callForm">LOGIN</button>
+</div>
+
+<router-outlet> </router-outlet>
+
+<ng-template #loginForm>
+  <app-login-form></app-login-form>
+</ng-template>
